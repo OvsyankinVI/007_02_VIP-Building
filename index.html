@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,15 +18,24 @@
 </head>
 
 <body>
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+    </ul>
+    
     <header>
         <div class="container">
             <div class="header__title">
                 <img src="img/logo.svg" alt="Logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
-                </button>
+                </a>
             </div>
             <h1>Реализуем крупнейшие проекты в России</h1>
             <h4>Стадионы, газопроводы, мосты, дамбы</h4>
@@ -81,16 +93,25 @@
         </div>
     </section>
 
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h5>Тестовое модальное окно для отправки запроса</h5>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Отправить</a>
+      </div>
+    </div>       
+
     <section class="mail-line">
         <div class="mail-line__all">
             <div class="mail-line__text">
                 <h2 class="mail-text-h2">Самые умные проекты</h2>
                 <h3 class="mail-text-h3">Реализуем самые смелые решения в россии!</h3>
             </div>
-            <button class="mail">
+            <a class="mail modal-trigger" href="#modal1">
                 <img class="mail-img" src="img/mail.svg" alt="mail">
                 <h3 class="mail-h3">Ваш запрос</h3>
-            </button>
+            </a>
         </div>
 
     </section>
@@ -126,47 +147,47 @@
     </section>
 
     <section class="works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
-        <img class="works__img" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
+        <img class="works__img materialboxed" src="img/Works.jpg" alt="Works">
     </section>
 
     <section class="questions">
         <h2 class="projects__text h2-text">Ответы на вопросы</h2>
         <div class="questions__qlick">
-            <div class="questions__click-items">
-                <h3 class="h3-text close">Работаете ли вы по 249 ФЗ?</h3>
+            <details class="questions__click-items">
+                <summary class="h3-text">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="p-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
                     Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
                     безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                     распечатки образцов. </p>
-            </div>
-            <div class="questions__click-items">
-                <h3 class="h3-text open">Работаете ли вы по 249 ФЗ?</h3>
+            </details>
+            <details class="questions__click-items">
+                <summary class="h3-text">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="p-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
                     Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
                     безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                     распечатки образцов. </p>
-            </div>
-            <div class="questions__click-items">
-                <h3 class="h3-text close">Работаете ли вы по 249 ФЗ?</h3>
+            </details>
+            <details class="questions__click-items">
+                <summary class="h3-text ">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="p-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
                     Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
                     безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                     распечатки образцов. </p>
-            </div>
-            <div class="questions__click-items">
-                <h3 class="h3-text close">Работаете ли вы по 249 ФЗ?</h3>
+            </details>
+            <details class="questions__click-items">
+                <summary class="h3-text ">Работаете ли вы по 249 ФЗ?</summary>
                 <p class="p-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
                     Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
                     безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
                     распечатки образцов. </p>
-            </div>
+            </details>
         </div>
     </section>
 
@@ -190,7 +211,7 @@
                     является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
                     печатник создал большую коллекцию размеров и форм шрифтов.</p>
                 <div class="review__grid_item-autor">
-                    <h4 class="black">Иванов Иван,</h4>
+                    <h4 class="black1">Иванов Иван,</h4>
                     <h4 class="accent"> ООО "Газпром-Арена"</h4>
                 </div>
             </div>
@@ -200,7 +221,7 @@
                     является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
                     печатник создал большую коллекцию размеров и форм шрифтов.</p>
                 <div class="review__grid_item-autor">
-                    <h4 class="black">Иванов Иван,</h4>
+                    <h4 class="black1">Иванов Иван,</h4>
                     <h4 class="accent"> ООО "Газпром-Арена"</h4>
                 </div>
             </div>
@@ -210,7 +231,7 @@
                     является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
                     печатник создал большую коллекцию размеров и форм шрифтов.</p>
                 <div class="review__grid_item-autor">
-                    <h4 class="black">Иванов Иван,</h4>
+                    <h4 class="black1">Иванов Иван,</h4>
                     <h4 class="accent"> ООО "Газпром-Арена"</h4>
                 </div>
             </div>
@@ -223,10 +244,10 @@
                 <h2 class="mail-text-h2 h22">Хотите с нами работать?</h2>
                 <h3 class="mail-text-h3 h33">Оставьте заявку и мы свяжемся с вами!</h3>
             </div>
-            <button class="mail">
+            <a class="mail modal-trigger" href="#modal1">
                 <img class="mail-img" src="img/mail.svg" alt="mail">
                 <h3 class="mail-h3">Ваш запрос</h3>
-            </button>
+            </a>
         </div>
 
     </section>
@@ -263,6 +284,8 @@
             <img src="img/logo-ovi.png" alt="logo-ovi">
         </div>
     </section>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

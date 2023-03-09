@@ -98,6 +98,7 @@ header {
     background-color: var(--color-accent);
     border: none;
     cursor: pointer;
+    padding-top: 15px;
 }
 .burger-line {
     background-color: #fff;
@@ -128,6 +129,23 @@ h4 {
     font-weight: 300;
     text-align: center;
     margin: 18px auto 0;
+}
+@media screen and (max-width: 1280px) {
+    .container {
+        padding: 0 10px;
+    }
+    h1 {
+        max-width: 734px;
+        font-size: 64px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        margin: 112px auto 0;
+        line-height: 95px;
+        letter-spacing: 0.02em;
+    }
 }
 /* контейнер между хедером и большими проектами */
 .about {
@@ -202,7 +220,7 @@ p {
         padding-top: 850px;
     }
 }
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 600px) {
     h1 {
         margin: 50px auto 0;
     }
@@ -308,6 +326,12 @@ p {
     width: 175px;
     height: 49px;
     margin-top: 14px;
+    background-color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+    .mail-line__all {
+        padding: 0 15px;
+    }
 }
 @media screen and (max-width: 768px) {
     .mail-line__all {
@@ -323,6 +347,7 @@ p {
     }
     .mail {
         margin: 6px auto 0 auto;
+        padding: 0 15px;
     }
 }
 @media screen and (max-width: 420px) {
@@ -440,6 +465,9 @@ p {
 .h3-text.close + .p-text {
     display: none;
 }
+summary {
+    cursor: pointer;
+}
 @media screen and (max-width: 1280px) {
     .questions__qlick {
         padding-left: 20px;
@@ -530,7 +558,7 @@ p {
     display: flex;
     padding: 7px 38px 0 0;
 }
-.black, .accent {
+.black1, .accent {
     font-weight: 500;
     font-size: 21px;
     line-height: 31px;
@@ -626,4 +654,9 @@ p {
     color: #fff;
     width: 40px;
     height: 40px;
+}
+@media screen and (max-width: 1280px) {
+    .footer {
+        padding: 0 35px;
+    }
 }

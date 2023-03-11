@@ -19,15 +19,15 @@
 
 <body>
     <ul id="slide-out" class="sidenav">
-        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
-        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
-        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
-        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><a href="#header"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#about"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#projects"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#contacts"><i class="material-icons">phone</i>Контакты</a></li>
         <li><div class="divider"></div></li>
         <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
     </ul>
     
-    <header>
+    <header id="header">
         <div class="container">
             <div class="header__title">
                 <img src="img/logo.svg" alt="Logo">
@@ -42,7 +42,7 @@
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__grid">
             <div class="about__grid-item">
                 <h2>26</h2>
@@ -95,7 +95,12 @@
 
     <div id="modal1" class="modal">
       <div class="modal-content">
-        <h5>Тестовое модальное окно для отправки запроса</h5>
+        <h5>Ваш запрос</h5>
+        <input type="text" name="" id="">
+      </div>
+      <div class="modal-content">
+        <h5>Ваша почта для обратной связи</h5>
+        <input type="email" name="" id="">
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Отправить</a>
@@ -116,7 +121,7 @@
 
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="projects__text h2-text">Чем мы занимаемся?</h2>
         <div class="projects__grid">
             <div class="projects__grid-item">
@@ -252,7 +257,7 @@
 
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <h2 class="h2-text">Контакты</h2>
         <div class="contacts__grid">
             <div class="contacts__grid-item">

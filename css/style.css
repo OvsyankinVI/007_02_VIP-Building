@@ -147,6 +147,17 @@ h4 {
         letter-spacing: 0.02em;
     }
 }
+@media screen and (max-width: 690px) {
+ h1 {
+    max-width: 400px;
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+        margin: 112px auto 0;
+        line-height: 95px;
+        letter-spacing: 0.02em;
+ }
+}
 /* контейнер между хедером и большими проектами */
 .about {
     position: relative;
@@ -326,7 +337,7 @@ p {
     width: 175px;
     height: 49px;
     margin-top: 14px;
-    background-color: #ffffff;
+    background-color: #ffffff; 
 }
 @media screen and (max-width: 1200px) {
     .mail-line__all {
@@ -627,6 +638,8 @@ summary {
 @media screen and (max-width: 1280px) {
     .contacts__grid {
         grid-template-columns: repeat(2, 2fr);
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .contacts__grid-item {
     margin-bottom: 20px;
@@ -641,14 +654,17 @@ summary {
 .footer {
     background-color: var(--color-dark);
     height: 82px;
+    padding-top: 20px;
 }
 .footer__text {
     max-width: 1110px;
     margin: 0px auto;
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer .p-text {
+    margin-top: 0;
 }
 .footer__text img {
     color: #fff;
@@ -657,6 +673,7 @@ summary {
 }
 @media screen and (max-width: 1280px) {
     .footer {
-        padding: 0 35px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
